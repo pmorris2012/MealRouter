@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Meal Router - Route</title>
+<link rel="icon" type="image/x-icon" href="/images/mealroutericon_32.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style/volunteers.css">
+<link rel="stylesheet" href="/style/route.css">
+
+      <script type="text/javascript" src="/scripts/util.js"></script>
+</head>
+<body>
+
+<div class="top">
+ <div class="container">
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          	  </button>
+          	  <a class="navbar-brand" href="#">  Meal Router</a>     	   	  </div>
+
+
+
+              <ul class="nav navbar-nav">
+              <li><a href="/schedule">Schedule</a></li>
+              <li class="active"><a href="/route">Route</a></li>
+             <!-- <li><a href="/volunteers">Volunteers</a></li> -->
+         	 <!-- <li><a href="/clients">Clients</a></li> -->
+			   <li><a href="/logout">Log Out</a></li>
+              </ul>
+        </div><!--/.container-fluid -->
+      </nav>
+    </div> <!-- /container -->
+<!--End Nav Bar -->
+</div>
+
+
+<div class="mainContent">
+<div class="left">
+<div class="list-group" id="routeList">
+  <!--<button type="button" class="list-group-item"><i class="glyphicon glyphicon-map-marker"></i> Route 1 PlaceHolder</button>
+  <button type="button" class="list-group-item"><i class="glyphicon glyphicon-map-marker"></i> Route 2 PlaceHolder</button>
+  <button type="button" class="list-group-item"><i class="glyphicon glyphicon-map-marker"></i> Route 3 PlaceHolder</button>
+  <button type="button" class="list-group-item"><i class="glyphicon glyphicon-map-marker"></i> Route 4 PlaceHolder</button>
+  <button type="button" class="list-group-item"><i class="glyphicon glyphicon-map-marker"></i> Route 5 PlaceHolder</button>-->
+</div>
+</div>
+<div class="main">
+    <div id="map"></div>
+    <div id="directions"></div>
+    <textarea id="info"></textarea>
+  <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28603.3194035273!2d-80.1152055!3d26.34543845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1449087022498" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+</div>
+
+
+</div> <!--End main-->
+</div> <!--End mainContent-->
+
+
+
+
+
+
+
+
+
+ 
+
+<script type="text/javascript" src="/scripts/route.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChXBF7J8xMw59lGT7yy62ZzcJeI_71v6M&signed_in=true&callback=initialize"
+        async defer></script>
+</body>
+</html>

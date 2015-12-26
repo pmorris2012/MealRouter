@@ -1,0 +1,30 @@
+    .top {
+        position:absolute;
+        left:0; right:0;
+        height: 92px;
+    }
+    .left {
+        position:absolute;
+        left:0; top:92px; bottom: 0;
+        width: 178px;
+    }
+    .main {
+        position: absolute;
+        left:178px; top:92px; right:0; bottom:0;
+    }
+
+    #map {
+        width: 600px;
+        height: 300px;
+    }
+
+    #directions {
+        width: 600px;
+        height: 300px;
+        overflow: auto;
+    }
+
+    #info {
+        width: 600px;
+        height:150px;
+    }

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Meal Router - Add Client</title>
+<link rel="icon" type="image/x-icon" href="/images/mealroutericon_32.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="volunteers.css">
+<link rel="stylesheet" href="/style/form.css">
+
+      <script type="text/javascript" src="/scripts/util.js"></script>
+
+ <script type="text/javascript" src="/scripts/form.js"></script>
+		
+		
+	  
+	  
+	  
+</head>
+<body>
+<script>
+	function closeAndRefresh(){
+		setTimeout(function(){
+			opener.location.reload(true);
+			self.close();
+		}, 2000);
+	}
+</script>
+ <div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form role="form" action="/api/clients/add" method="post">
+			<h2>New Client Form</h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+					 <h4>First Name:</h4>
+                        <input type="text" name="first" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1" >
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+					 <h4>Last Name:</h4>
+						<input type="text" name="last" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2" required>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				 <h4>E-Mail:</h4>
+				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="3" required>
+			</div>
+			<div class="form-group">
+				 <h4>Full Address:</h4>
+				<input type="text" name="address" id="address" class="form-control input-lg" placeholder="Address" tabindex="4" required>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						 <h4>Phone:</h4>
+						<input type="text" name="phone" id="phone" class="form-control input-lg" placeholder="Phone (123-456-7890)" tabindex="5" required>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="form-group">
+						<h4>Notes:</h4>
+						<textarea name="notes" id="notes" rows="4" cols="50" class="form-control input-lg" placeholder="" tabindex="5" required>
+
+						</textarea>
+					</div>
+				</div>
+			</div>
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-6"><input type="submit" value="Add Client" class="btn btn-primary btn-block btn-lg" tabindex="0" onclick=closeAndRefresh()></div>
+			
+			</div>
+
+
+
+
+
+
+
+
+
+		</form>
+	</div>
+</div>
+
+
+</div>
+
+
+
+   
+</body>
+</html>

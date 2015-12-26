@@ -1,0 +1,35 @@
+.mainContent {
+ 	z-index: 1;
+    margin:auto;
+    width:auto;
+}
+
+h1 {
+    test-align: right;
+}
+
+body{
+    background: url(background.png);
+	background-color: #444;
+     
+}
+
+.vertical-offset-100{
+    padding-top:25%;
+}
+
+ #googlemaps { 
+      height: 100%; 
+      width: 100%; 
+      position:absolute; 
+      top: 0; 
+      left: 0; 
+      z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+    }
+     
+footer
+{
+z-index: 1;
+
+
+}
